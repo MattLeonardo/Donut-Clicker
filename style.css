@@ -1,0 +1,73 @@
+body {
+    background-color: #666;
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: brown;
+}
+
+h1 {
+    text-align: center;
+}
+
+#tracking {
+    display: grid;
+    grid-auto-rows: 2.5em;
+    width: 15%;
+    height: 100vh;
+    background-color: white;
+}
+
+#collected {
+    font: 2em sans-serif;
+    text-align: center;
+}
+
+#donutmaker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    background-color: brown;
+}
+
+
+#donutmaker  img {
+    height: 50%;
+    width: 50%;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+#donutmaker img:hover {
+    transform: scale(1.2);
+}
+
+#collected:hover {
+    transform: scale(1.2);
+}
+
+
+#donutstore {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 15%;
+    background-color: white;
+}
+
+.upgrades {
+    height: 25em;
+    width: 25em;
+    display: grid;
+    grid-template-columns: 3 3 3;
+    grid-template-rows: 3 3 3;
+    border: black solid;;
+}
