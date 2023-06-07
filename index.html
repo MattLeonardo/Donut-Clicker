@@ -8,35 +8,41 @@
     <link rel="icon" type="image/x-icon" href="/images/favicondonut.ico" />
     <title>Donut Clicker</title>
   </head>
-  <body>
+  <body> 
+    <div class="container">
+    <header>Header</header>
+    </div>
     <h1>Welcome to Donut Clicker!</h1>
     <div id="game">
       <div id="tracking"><h2>Tracking</h2>
-    <p>Total number of donuts collected:<div id="collected"></div></p>
+    <p>Total number of donuts collected:<div id="donuts"></div></p>
     
     <p>Current number of donuts</p>
     </div>
       <div id="donutmaker">
-        <div class="donutcontainer">
-        <div class="container1"><h2>Click to start making donuts!</h2></div>
+        <div id="donutcontainer">
+        <div id="container1"><h2>Click to start making donuts!</h2></div>
 
-       <div class="container2"><p><img src="/images/donut.png" id="donutbutton" alt="donut" /></p></div>
+       <div id="container2"><p><img src="/images/donut.png" id="donutbutton" alt="donut" /></p></div>
         </div>
       </div>
-      <div id="donutstore">
-        <h2>Donut Store</h2>
-        <div class="upgrades">Purchase</div>
+    <div id="donutstore">
+        <div id="storeh2"><h2>Donut Store</h2></div>
+      <div id="storecontainer">
+            <div id="upgrades">
+              <div id="upgrade1container"></div>
+                <div id="upgrade1">Donut Assistant - 100 Donuts</div><div id="upgrade1hide">Adds 1 Donut/sec</div>
+                  <button onclick="autoClicker()" id="donutAssist">Purchase</button>
+                <div id="upgrade2">2</div>
+                <div id="upgrade3">3</div>
+                <div id="upgrade4">4</div>
+                <div id="upgrade5">5</div>
+                <div id="upgrade6">6</div>
+              </div>
+            </div>
       </div>
     </div>
+    <footer>Footer</footer>
     <script src="donutmaker.js"></script>
   </body>
-
-  <h1>The Element Object</h1>
-<h2>The addEventListener() Method</h2>
-
-<p>Execute a function when a user clicks on a button:</p>
-
-<button id="myBtn">Try it</button>
-
-<p id="demo">
 </html>

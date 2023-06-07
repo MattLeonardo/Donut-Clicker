@@ -23,9 +23,32 @@ h1 {
     background-color: white;
 }
 
-#collected {
+#donuts {
     font: 2em sans-serif;
     text-align: center;
+}
+
+#donutbutton {
+    text-decoration: none;
+            box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+            cursor: pointer;
+            outline: none;
+            transition: 0.2s all;
+            border-radius: 50%;
+}
+
+#donutbutton:active{
+    transform: scale(0.98);
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#donutAssist {
+    margin: 3px;
+}
+
+#donutAssist:hover {
+    cursor: pointer;
+    border: #000 solid 2px;
 }
 
 #donutmaker {
@@ -49,25 +72,93 @@ h1 {
     transform: scale(1.2);
 }
 
-#collected:hover {
+#donuts:hover {
     transform: scale(1.2);
 }
 
 
+
 #donutstore {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     height: 100%;
     width: 15%;
     background-color: white;
 }
 
-.upgrades {
-    height: 25em;
-    width: 25em;
-    display: grid;
-    grid-template-columns: 3 3 3;
-    grid-template-rows: 3 3 3;
-    border: black solid;;
+#storecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    padding: 1rem;
+}
+
+#upgrades {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+flex-direction: column;
+background-color: #CCC;
+border-color: #000 2px solid;
+}
+
+
+
+#upgrade1 {
+    display: flex;
+    align-items: stretch;
+    justify-content:space-around;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#upgrade1hide {
+    display: none;
+}
+
+#upgrade1:hover + #upgrade1hide {
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #000;
+    font: 1em sans-serif;
+    border: #000 solid 2px;
+    border-radius: 7px;
+}
+
+#upgrade2 {
+    border: solid black 2px;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+#upgrade3 {
+    border: solid black 2px;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+#upgrade4 {
+    border: solid black 2px;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+#upgrade5 {
+    border: solid black 2px;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+#upgrade6 {
+    border: solid black 2px;
+    padding: 5px;
+    margin-bottom: 2px;
 }
