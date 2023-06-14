@@ -5,9 +5,15 @@
         "donutstore"
     ],
     "cSpell.words": [
+        "currentdonuts",
+        "donutandroid",
         "leftclosebtn",
         "leftopenbtn",
         "leftsidebar",
-        "storecontainer"
+        "rightclosebtn",
+        "rightopenbtn",
+        "rightsidebar",
+        "storecontainer",
+        "storeimgs"
     ]
 }
