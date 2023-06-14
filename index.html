@@ -15,10 +15,10 @@
   <header>
     <nav>  
       <ul class="navbar">  
-        <li>Home</li>  
-        <li>Profile</li>  
-        <li>About</li>
-        <li>Inspiration</li>  
+        <li><a href="#top">Home</a></li>  
+        <li><a href="https://mattleonardo.github.io/test/" target="_blank">Profile</a></li>  
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Inspiration</a></li>  
       </ul>  
     </nav>
   </header>
@@ -41,14 +41,13 @@
     <div id="stats" class="leftsidebar">
       <a href="javascript:void(0)" class="leftclosebtn" onclick="closeLeftNav()">&times;</a>
       <div id="tracking"></div>
-      <h2>Donut Stats:</h2>
+      <h2><img src="images/donutandroid-chrome-192x192.png">Donut Stats:</h2>
       <p>Total number of donuts collected:</p>
       <div id="donutTotal"></div>
 
-      <p>Current number of donuts:</p>
-      <div id="donuts"></div>
+      
 
-      <p id="donutAssistants">Current number of Donut Assistants:</p>
+      <p id="donutAssistants"><img src="images/donutassistant.png">Current number of Donut Assistants:</p>
       <div id="donutAssistantsCount"></div>
     </div>
 
@@ -56,9 +55,15 @@
 
     <!-- middle of the page -->
     <div id="donutmaker">
+      
+      
       <div id="donutcontainer">
+        
         <div id="container1">
-          <h2>Click to start making donuts!</h2>
+          <h1>Welcome to Amazon Donut Fulfillment!</h1>
+          <p><h2>Current number of donuts:</h2></p>
+          <div id="donuts"></div>
+          <p><h2>Click to start making donuts!</h2></p>
         </div>
 
         <div id="container2">
@@ -73,13 +78,14 @@
       
       <a href="javascript:void(0)" class="rightclosebtn" onclick="closeRightNav()">&times;</a>
       <div id="storeh2">
+        <img src="images/donutstore.png">
         <h2>Donut Store</h2>
       <div id="storecontainer">
         <div id="upgrades">
-          <div id="upgrade1container">
+          <div id="upgrade1container"><img src="images/donutassistant.png">
             <div id="upgrade1">Donut Assistant - 100 Donuts</div>
             <div id="upgrade1hide">Adds 1 Donut/sec</div>
-            <button onclick="autoClicker()" id="donutAssist">Purchase</button>
+            <button onclick="autoClicker()" id="donutAssist">Purchase</button><img src="images/donut.ico">
           </div>
           <div id="upgrade2">2</div>
           <div id="upgrade3">3</div>

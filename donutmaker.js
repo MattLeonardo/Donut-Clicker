@@ -76,8 +76,8 @@ function autoClicker() {
     // removes the donuts
     document.getElementById("donuts").innerHTML -= dAssist;   
     donuts = donuts - dAssist;
-    dAssist = dAssist * 1.15;
-    dAssist = Math.trunc(dAssist);
+    dAssist = dAssist * 1.10;
+    dAssist = Math.round(dAssist);
     upgrade1.innerText = "Donut Assistant- " + dAssist + " Donuts"; 
     donutAssistants.style.display = "inline";
     donutAssistantsCount.innerHTML ++; "1";
