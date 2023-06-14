@@ -1,51 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/donut.ico">
-    <title>Donut Clicker</title>
-  </head>
-  <body> 
-    <div class="container">
-    <header>Header</header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/donut.ico" />
+  <title>Donut Clicker</title>
+</head>
+
+<body>
+  <!-- Top of page -->
+  <header>
+    <nav>  
+      <ul class="navbar">  
+        <li>Home</li>  
+        <li>Profile</li>  
+        <li>Blog</li>
+        <li>Contact</li>  
+      </ul>  
+    </nav>
+  </header>
+
+<div class="container">
+  </div>
+  <h1>Welcome Amazon Donut Fulfillment Center!</h1>
+  <div id="game">
+
+
+    <!-- left side of the page -->
+    <div id="stats" class="leftsidebar">
+      <a href="javascript:void(0)" class="leftclosebtn" onclick="closeLeftNav()">&times;</a>
+      <div id="tracking"></div>
+      <h2>Donut Stats:</h2>
+      <p>Total number of donuts collected:</p>
+      <div id="donutTotal"></div>
+
+      <p>Current number of donuts:</p>
+      <div id="donuts"></div>
+
+      <p id="donutAssistants">Current number of Donut Assistants:</p>
+      <div id="donutAssistantsCount"></div>
     </div>
-    <h1>Welcome to Donut Clicker!</h1>
-    <div id="game">
-      <div id="tracking"><h2>Donut Stats:</h2>
-    <p>Total number of donuts collected: <div id="donutTotal"></div></p>
+    <div id="trackingNav">
+      <div id="lftbtn">
+      <button class="leftopenbtn" onclick="openLeftNav()">
+        ☰ Open Stats
+      </button></div>
+      <div id="rgtbtn">
+      <button class="rightopenbtn" onclick="openRightNav()">
+        ☰ Open Store
+      </button></div>
+    </div>
     
-    <p>Current number of donuts: <div id="donuts"></div></p>
 
-    <p id="donutAssistants" >Current number of Donut Assistants:</p>
-        <div id="donutAssistantsCount"></div>
-    </div>
-      <div id="donutmaker">
-        <div id="donutcontainer">
-        <div id="container1"><h2>Click to start making donuts!</h2></div>
+    <!-- middle of the page -->
+    <div id="donutmaker">
+      <div id="donutcontainer">
+        <div id="container1">
+          <h2>Click to start making donuts!</h2>
+        </div>
 
-       <div id="container2"><p><img src="/images/donut.png" id="donutbutton" alt="donut" /></p></div>
+        <div id="container2">
+          <p><img src="/images/donut.png" id="donutbutton" alt="donut" /></p>
         </div>
       </div>
-    <div id="donutstore">
-        <div id="storeh2"><h2>Donut Store</h2></div>
-      <div id="storecontainer">
-            <div id="upgrades">
-              <div id="upgrade1container"></div>
-                <div id="upgrade1">Donut Assistant - 100 Donuts</div><div id="upgrade1hide">Adds 1 Donut/sec</div>
-                  <button onclick="autoClicker()" id="donutAssist">Purchase</button>
-                <div id="upgrade2">2</div>
-                <div id="upgrade3">3</div>
-                <div id="upgrade4">4</div>
-                <div id="upgrade5">5</div>
-                <div id="upgrade6">6</div>
-              </div>
-            </div>
-      </div>
     </div>
-    <footer>Footer</footer>
-    <script src="donutmaker.js"></script>
-  </body>
+
+    <!-- Right side of the page -->
+    
+    <div id="donutstore" class="rightsidebar">
+      
+      <a href="javascript:void(0)" class="rightclosebtn" onclick="closeRightNav()">&times;</a>
+      <div id="storeh2">
+        <h2>Donut Store</h2>
+      <div id="storecontainer">
+        <div id="upgrades">
+          <div id="upgrade1container">
+            <div id="upgrade1">Donut Assistant - 100 Donuts</div>
+            <div id="upgrade1hide">Adds 1 Donut/sec</div>
+            <button onclick="autoClicker()" id="donutAssist">Purchase</button>
+          </div>
+          <div id="upgrade2">2</div>
+          <div id="upgrade3">3</div>
+          <div id="upgrade4">4</div>
+          <div id="upgrade5">5</div>
+          <div id="upgrade6">6</div>
+        </div>
+      </div>
+      
+        
+        </div>
+        
+        
+      </div>
+      
+      
+      <footer>Footer</footer>
+  </div>
+
+  <script src="donutmaker.js"></script>
+</body>
+
 </html>

@@ -4,22 +4,53 @@ var donuts = 0;
 var donutTotal = 0;
 // Main image of donut to click
 const donutButton = document.getElementById("donutbutton");
+
+// donut store upgrades
 const upgrade1 = document.getElementById("upgrade1");
 const donutAssistants = document.getElementById("donutAssistants");
-donutAssistants.style.display = "none"
+donutAssistants.style.display = "none";
+const upgrade1Container = document.getElementById("upgrade1container");
+upgrade1Container.style.display = "inline";
+
+// Opens the Donut tracking on the left side
+function openLeftNav() {
+  document.getElementById("stats").style.width = "250px";
+  document.getElementById("trackingNav").style.marginLeft = "250px";
+}
+// Closes Tracking
+function closeLeftNav() {
+  document.getElementById("stats").style.width = "0";
+  document.getElementById("storeNav").style.marginLeft= "0";
+}
+// Right side donut Store
+function openRightNav() {
+  document.getElementById("donutstore").style.width = "250px";
+  document.getElementById("storeNav").style.marginRight = "250px";
+}
+// Closes Tracking
+function closeRightNav() {
+  document.getElementById("donutstore").style.width = "0";
+  document.getElementById("storeNav").style.marginRight= "0";
+}
+
+
 
 donutButton.addEventListener("click", donutClick);
 // adds a donut on click and counts donuts
 function donutClick() {
   document.getElementById("donuts").innerHTML++;
-  ("1");document.getElementById("donutTotal").innerHTML++;
+  ("1");
+  document.getElementById("donutTotal").innerHTML++;
   ("1");
   donuts = donuts + 1;
   donutTotal = donutTotal + 1;
   console.log(donuts);
-}
+};
 
+// Donut Store "prices"
 var dAssist = 100;
+
+
 
 
     // auto clicker
@@ -51,7 +82,7 @@ function autoClicker() {
     donutAssistants.style.display = "inline";
     donutAssistantsCount.innerHTML ++; "1";
   } else {
-    alert("You do not have enough donuts require to purchase!");
+    alert("You do not have enough donuts required to purchase!");
   }
 }
 console.log(donuts);

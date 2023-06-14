@@ -1,95 +1,129 @@
 body {
-    background-color: #666;
-}
+    margin: 0px;
+    height: 100vh;
+  }
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: #fff;
+  }
 
 #game {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-color: brown;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
-#tracking {
-    display: grid;
-    grid-auto-rows: 2.5em;
-    width: 15%;
-    height: 100vh;
-    background-color: white;
+.leftsidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-#donuts {
-    font: 2em sans-serif;
-    text-align: center;
+.leftsidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-#donutAssistantsCount {
-    font: 2em sans-serif;
-    text-align: center;
+.leftsidebar a:hover {
+  color: #f1f1f1;
 }
 
-#donutTotal {
-    font: 2em sans-serif;
-    text-align: center;
-    
+.leftsidebar .leftclosebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-#donutbutton {
-    text-decoration: none;
-            box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-            cursor: pointer;
-            outline: none;
-            transition: 0.2s all;
-            border-radius: 50%;
+.leftopenbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: #ccc;
+  padding: 10px 1px;
+  border: none;
 }
 
-#donutbutton:active{
-    transform: scale(0.98);
-            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+.leftopenbtn:hover {
+  background-color: #444;
 }
 
-#donutAssist {
-    margin: 3px;
-}
-
-#donutAssist:hover {
-    cursor: pointer;
-    border: #000 solid 2px;
-}
-
-#donutmaker {
+#trackingNav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-between;
+}
+
+.rightsidebar {
     height: 100%;
-    width: 70%;
-    background-color: brown;
-}
-
-
-#donutmaker  img {
-    height: 50%;
-    width: 50%;
+    width: -100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .rightsidebar a {
+    padding:8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .rightsidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .rightsidebar .rightclosebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .rightopenbtn {
+    font-size: 20px;
     cursor: pointer;
-    transition: transform .2s;
-}
+    background-color: #111;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border: none;
+  }
+  
+  .rightopenbtn:hover {
+    background-color: #444;
+  }
+  
 
-#donutmaker img:hover {
-    transform: scale(1.2);
-}
-
-#donuts:hover {
-    transform: scale(1.2);
-}
-
-
-
-#donutstore {
+  #donutstore {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -97,44 +131,51 @@ h1 {
     height: 100%;
     width: 15%;
     background-color: white;
-}
-
-#storecontainer {
+  }
+  
+  #storecontainer {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: burlywood;
     padding: 1rem;
-}
-
-#upgrades {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
-flex-direction: column;
-background-color: #CCC;
-border-color: #000 2px solid;
-}
-
-
-
-#upgrade1 {
+  }
+  
+  #upgrades {
     display: flex;
-    align-items: stretch;
-    justify-content:space-around;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #ccc;
+    border-color: #000 2px solid;
+    box-shadow: 5px 5px 25px 1px;
+  }
+  
+  #upgrade1container {
     text-align: center;
     border: solid black 2px;
     border-radius: 7px;
     padding: 10px;
     margin-bottom: 5px;
-}
-
-#upgrade1hide {
+  }
+  
+  #upgrade1 {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  #upgrade1hide {
     display: none;
-}
-
-#upgrade1:hover + #upgrade1hide {
+  }
+  
+  #upgrade1:hover + #upgrade1hide {
     text-align: center;
     width: 100%;
     display: block;
@@ -142,34 +183,96 @@ border-color: #000 2px solid;
     font: 1em sans-serif;
     border: #000 solid 2px;
     border-radius: 7px;
-}
-
-#upgrade2 {
+  }
+  
+  #upgrade2 {
     border: solid black 2px;
     padding: 5px;
     margin-bottom: 2px;
-}
-
-#upgrade3 {
+  }
+  
+  #upgrade3 {
     border: solid black 2px;
     padding: 5px;
     margin-bottom: 2px;
-}
-
-#upgrade4 {
+  }
+  
+  #upgrade4 {
     border: solid black 2px;
     padding: 5px;
     margin-bottom: 2px;
-}
-
-#upgrade5 {
+  }
+  
+  #upgrade5 {
     border: solid black 2px;
     padding: 5px;
     margin-bottom: 2px;
-}
-
-#upgrade6 {
+  }
+  
+  #upgrade6 {
     border: solid black 2px;
     padding: 5px;
     margin-bottom: 2px;
+  }
+
+#donuts {
+  font: 2em sans-serif;
+  text-align: center;
+}
+
+#donutAssistantsCount {
+  font: 2em sans-serif;
+  text-align: center;
+}
+
+#donutTotal {
+  font: 2em sans-serif;
+  text-align: center;
+}
+
+#donutbutton {
+  text-decoration: none;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+  border-radius: 50%;
+}
+
+#donutbutton:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#donutAssist {
+  margin: 3px;
+}
+
+#donutAssist:hover {
+  cursor: pointer;
+  border: #000 solid 2px;
+}
+
+#donutmaker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: brown;
+}
+
+#donutmaker img {
+  height: 50%;
+  width: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#donutmaker img:hover {
+  transform: scale(1.2);
+}
+
+#donuts:hover {
+  transform: scale(1.2);
 }
