@@ -355,7 +355,7 @@ h1 {
   align-items: center;
   height: 100%;
   width: 100%;
-  background-image: url("/images/background.jpg");
+  background-image: url("images/background.jpg");
 }
 
 #donutmaker img {
