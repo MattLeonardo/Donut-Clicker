@@ -8,7 +8,6 @@ const upgrade1 = document.getElementById("upgrade1");
 const donutAssistants = document.getElementById("donutAssistants");
 donutAssistants.style.display = "none"
 
-
 donutButton.addEventListener("click", donutClick);
 // adds a donut on click and counts donuts
 function donutClick() {
@@ -21,6 +20,7 @@ function donutClick() {
 }
 
 var dAssist = 100;
+
 
     // auto clicker
 function autoClicker() {
@@ -38,18 +38,18 @@ function autoClicker() {
       1;
       document.getElementById("donutTotal").innerHTML++;
       donutAuto;
-      donuts++;
+      donutTotal++;
       1;
     }, 1000);
   
     // removes the donuts
-    document.getElementById("donuts").innerHTML -= dAssist;
-    donuts = donuts - 100;   
-    dAssist = dAssist + 10;
+    document.getElementById("donuts").innerHTML -= dAssist;   
+    donuts = donuts - dAssist;
+    dAssist = dAssist * 1.15;
+    dAssist = Math.trunc(dAssist);
     upgrade1.innerText = "Donut Assistant- " + dAssist + " Donuts"; 
     donutAssistants.style.display = "inline";
     donutAssistantsCount.innerHTML ++; "1";
-    console.log(dAssist);
   } else {
     alert("You do not have enough donuts require to purchase!");
   }
