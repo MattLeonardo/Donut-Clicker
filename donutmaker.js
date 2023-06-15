@@ -15,22 +15,22 @@ upgrade1Container.style.display = "inline";
 // Opens the Donut tracking on the left side
 function openLeftNav() {
   document.getElementById("stats").style.width = "250px";
-  document.getElementById("trackingNav").style.marginLeft = "250px";
+  document.getElementById("statsbtn").style.marginLeft = "250px";
 }
 // Closes Tracking
 function closeLeftNav() {
   document.getElementById("stats").style.width = "0";
-  document.getElementById("storeNav").style.marginLeft= "0";
+  document.getElementById("statsbtn").style.marginLeft= "0";
 }
 // Right side donut Store
 function openRightNav() {
   document.getElementById("donutstore").style.width = "250px";
-  document.getElementById("storeNav").style.marginRight = "250px";
+  document.getElementById("storebtn").style.marginRight = "250px";
 }
-// Closes Tracking
+// Closes Store
 function closeRightNav() {
   document.getElementById("donutstore").style.width = "0";
-  document.getElementById("storeNav").style.marginRight= "0";
+  document.getElementById("storebtn").style.marginRight= "0";
 }
 
 

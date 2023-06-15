@@ -13,31 +13,33 @@
 <body>
   <!-- Top of page -->
   <header>
-    <nav>  
-      <ul class="navbar">  
-        <li><a href="#top">Home</a></li>  
-        <li><a href="https://mattleonardo.github.io/test/" target="_blank">Profile</a></li>  
+    <nav>
+      <ul class="navbar">
+        <li><a href="#top">Home</a></li>
+        <li><a href="https://mattleonardo.github.io/test/" target="_blank">Profile</a></li>
         <li><a href="about.html" target="_blank">About</a></li>
-        <li><a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Inspiration</a></li>  
-      </ul>  
+        <li><a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Inspiration</a></li>
+      </ul>
     </nav>
   </header>
 
   <div id="game">
-    
-
-
-    <!-- left side of the page -->
     <div id="trackingNav">
-      <div id="lftbtn">
+      <div id="statsbtn">
       <button class="leftopenbtn" onclick="openLeftNav()">
         ☰ Open Stats
-      </button></div>
-      <div id="rgtbtn">
+      </button>
+      </div>
+      
+      <div id="storebtn">
       <button class="rightopenbtn" onclick="openRightNav()">
         ☰ Open Store
-      </button></div>
+      </button>
     </div>
+
+    </div>
+
+    <!-- left side of the page -->
     <div id="stats" class="leftsidebar">
       <a href="javascript:void(0)" class="leftclosebtn" onclick="closeLeftNav()">&times;</a>
       <div id="tracking"></div>
@@ -45,25 +47,29 @@
       <p>Total number of donuts collected:</p>
       <div id="donutTotal"></div>
 
-      
+
 
       <p id="donutAssistants"><img src="images/donutassistant.png">Current number of Donut Assistants:</p>
       <div id="donutAssistantsCount"></div>
     </div>
 
-    
+
 
     <!-- middle of the page -->
     <div id="donutmaker">
-      
-      
+
+
       <div id="donutcontainer">
-        
+
         <div id="container1">
           <h1>Welcome to Amazon Donut Fulfillment!</h1>
-          <p><h2>Current number of donuts:</h2></p>
+          <p>
+          <h2>Current number of donuts:</h2>
+          </p>
           <div id="donuts"></div>
-          <p><h2>Click to start making donuts!</h2></p>
+          <p>
+          <h2>Click to start making donuts!</h2>
+          </p>
         </div>
 
         <div id="container2">
@@ -73,36 +79,27 @@
     </div>
 
     <!-- Right side of the page -->
-    
+
     <div id="donutstore" class="rightsidebar">
-      
+
       <a href="javascript:void(0)" class="rightclosebtn" onclick="closeRightNav()">&times;</a>
       <div id="storeh2">
         <img src="images/donutstore.png">
         <h2>Donut Store</h2>
-      <div id="storecontainer">
-        <div id="upgrades">
-          <div id="upgrade1container"><img src="images/donutassistant.png">
-            <div id="upgrade1">Donut Assistant - 100 Donuts</div>
-            <div id="upgrade1hide">Adds 1 Donut/sec</div>
-            <button onclick="autoClicker()" id="donutAssist">Purchase</button><img src="images/donut.ico">
+        <div id="storecontainer">
+          <div id="upgrades">
+            <div id="upgrade1container">
+              <img src="images/donutassistant.png">
+              <div id="upgrade1">Donut Assistant - 100 Donuts</div>
+              <div id="upgrade1hide">Adds 1 Donut/sec</div>
+              <button onclick="autoClicker()" id="donutAssist">Purchase</button>
+            </div>
           </div>
-          <div id="upgrade2">2</div>
-          <div id="upgrade3">3</div>
-          <div id="upgrade4">4</div>
-          <div id="upgrade5">5</div>
-          <div id="upgrade6">6</div>
         </div>
       </div>
-      
-        
-        </div>
-        
-        
-      </div>
-      
-      
-      <footer>Footer</footer>
+    </div>
+
+    <footer>Footer</footer>
   </div>
 
   <script src="donutmaker.js"></script>
