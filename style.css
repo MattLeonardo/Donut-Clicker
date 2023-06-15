@@ -7,6 +7,7 @@ body {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
+  align-items: center;
   background-color: #333;
   z-index: 1;
 }
@@ -37,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-  color: plum;
+  color: #fff;
 }
 
 #game {
@@ -142,7 +143,7 @@ h1 {
 #trackingNav {
   display: flex;
   justify-content: space-between;
-  top: 64px;
+  top: 6%;
   position: relative;
 }
 
@@ -155,8 +156,6 @@ h1 {
   transition: margin-left.5s;
   position: relative;
 }
-
-
 
 .rightsidebar a:hover {
   color: #f1f1f1;
@@ -379,4 +378,47 @@ h1 {
 
 #donuts:hover {
   transform: scale(1.2);
+}
+
+.dropbtn, .home, .profile, .inspiration {
+  background-color: #333;
+  color: white;
+  padding: 7px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .home:hover, .profile:hover, .inspiration:hover, .dropbtn:focus, .home:focus, .profile:focus, .inspiration:focus {
+  background-color: plum;
+}
+
+.dropdown, .home, .profile, .inspiration {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #444;
+  text-decoration: none;
+  padding: 7px 25px;
+  display: inline-block;
+}
+
+.dropdown a:hover {
+  background-color: #333;
+}
+
+.show {
+  display: block;
 }

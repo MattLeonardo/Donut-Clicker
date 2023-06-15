@@ -15,10 +15,16 @@
   <header>
     <nav>
       <ul class="navbar">
-        <li><a href="#top">Home</a></li>
-        <li><a href="https://mattleonardo.github.io/test/" target="_blank">Profile</a></li>
-        <li><a href="about.html" target="_blank">About</a></li>
-        <li><a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Inspiration</a></li>
+        <li><div class="home"><a href="#top">Home</a></div></li>
+        <li><div class="profile"><a href="https://mattleonardo.github.io/test/" target="_blank">Profile</a></div></li>
+        <li><div class="dropdown">
+          <button onclick="dropDown()" class="dropbtn">About</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="about.html" target="_blank">About</a></a>
+            <a href = "mailto: mattleonardo1877@gmail.com">Send Email</a>
+          </div>
+        </div></li>
+        <li><div class="inspiration"><a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Inspiration</a></div></li>
       </ul>
     </nav>
   </header>
@@ -97,6 +103,10 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="reset">
+      <button class="resetbutton" onclick="resetBtn()">RESET</button>
+
     </div>
 
     <footer>Footer</footer>
