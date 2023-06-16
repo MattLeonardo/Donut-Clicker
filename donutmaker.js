@@ -106,3 +106,10 @@ window.onclick = function(event) {
     }
   }
 }
+
+function resetBtn () {
+  let text = "All progress will be canceled!";
+  if (confirm(text) == true) {
+    location.reload();
+  }
+}
